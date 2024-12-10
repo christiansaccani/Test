@@ -17,7 +17,94 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#postsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 8rem;
+}
+
+.postCard {
+  border: 1px solid #ededed;
+  border-radius: 16px;
+
+  padding: 1rem;
+  width: 250px;
+
+  cursor: pointer;
+  transition: all .4s linear;
+}
+
+.postCard:hover {
+  background-color: #ededed;
+  color: #0a0a0a;
+}
+
+.cardTitle {
+  margin: .5rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cardImg {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.date {
+  font-size: .7rem;
+}
+
+.detailContainer {
+  margin: 2rem 4rem;
+}
+
+.detailImg {
+  width: 350px;
+  margin: 2rem 0 .5rem;
+  border: 3px solid #ededed;
+  border-radius: 16px;
+}
+
+.detailText {
+  max-width: 45vw;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 2px solid #ededed;
+  border-radius: 8px;
+}
+
+.header {
+  height: 80px;
+  background-color: #ededed;
+  color: #171717;
+  display: flex;
+  align-items: center;
+}
+
+.headerTitle {
+  margin-left: 4rem;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ededed;
+  color: #171717;
+  text-align: center;
+  padding: 1rem;
+  cursor: default;
 }
 
 @layer utilities {

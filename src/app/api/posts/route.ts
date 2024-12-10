@@ -36,6 +36,7 @@ const generateRandomPost = (id: number) => {
   } as BlogPost;
 };
 
+// Gestione per la richiesta di tutti i post
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const numPosts = parseInt(searchParams.get("n") || "5");
